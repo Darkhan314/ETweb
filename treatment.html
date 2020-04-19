@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Treatment</title>
+	<link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/treatment.css">
+</head>
+<body>
+		
+	<div id="wrapper">
+		<div class="cube">
+			<div class="side" id="side1">
+				<div class="inside">
+					<p class="title">
+						Virus treatment methods
+					</p>
+					<p class="text">
+						The doctor and the patient have three main aims: <br><br>
+						1) destroy the virus; <br>
+						2) help the immune system overcome the infection; <br>
+						3) to weaken the painful manifestations of the disease <br><br>
+
+						Adamantane derivatives (amantadine, rimantadine) are practically not used now: the swine flu pandemic in 2009 showed almost 100% resistance of viruses to them. <br><br>
+						Stay at home and call a doctor, and then follow his recommendations. <br><br>
+						Lead a healthy lifestyle, eat well, exercise, follow the regimen <br><br>
+						The specific prevention of infectious diseases, including influenza, is vaccination. In the epidemic season, vaccinations are widely practiced in various groups, and in some enterprises they are mandatory. Shortly after the introduction of the vaccine into the body, short-term immunity develops.
+					</p>
+					
+				</div>
+			</div>
+			<div class="side" id="side2">
+				<div class="inside">
+					<p class="title">
+						To reduce the risk of infection, you must:
+					</p>
+					<p class="text">
+						- Regularly treat your hands with an alcohol-based product or wash them with soap and water<br>
+						- While coughing or sneezing, cover the nose and mouth with a napkin or elbow<br>
+						- Avoid close contact (keep at least 1 meter) with people who have symptoms of the common cold or flu <br><br>
+						Lead a healthy lifestyle, eat well, play sports, follow the regimen - and then you will be much less likely to get SARS and the flu. And if the infection does get into the body, strong immunity will quickly cope with viruses and prevent complications.<br><br>
+						It is hardly realistic to completely protect yourself from acute respiratory viral infections and influenza: everyone is susceptible to viral infections of the respiratory tract. The task of medicine is to facilitate the occurrence of colds, reduce their duration and prevent complications. From this point of view, the main treatment for influenza and SARS is antiviral therapy.
+					</p>
+					
+				</div>
+			</div>
+			<div class="side" id="side3">
+				<div class="inside">
+					<p class="title">
+						Measles
+					</p>
+					<p class="text">
+						1) Urgently seek medical help (call a doctor from the clinic at the place of residence or, in case of a serious condition, ambulance) <br>
+						2) Do not visit the clinic yourself, but wait for a doctor; <br>
+						3) Before the arrival of the doctor, reduce contacts with relatives and other people to a minimum;<br>
+						4) Tell the doctor in what period and in which country you were abroad;<br>
+						5) When coughing and sneezing, cover your mouth and nose using a handkerchief or napkin, wash your hands more often with soap and water, or use alcohol-based products to clean your hands;<br>
+						6) Use respiratory protection (such as a mask or gauze bandage);<br>
+						7) Do not self-medicate!<br><br>
+
+						(Protecting yourself and your children from measles can only be done through vaccination. Measles vaccination is carried out at the age of 12 months, revaccination - at 6 years according to the calendar of preventive vaccinations.)
+					</p>
+					
+				</div>
+			</div>
+			<div class="side" id="side4">
+				<div class="inside">
+					<p class="title">
+						Varicella
+					</p>
+					<p class="text">
+						The doctor and the patient have three main aims: <br><br>
+						The basis of therapeutic measures is carried out thorough skin and nail care. A daily shower (bath) is shown with a thorough, but gentle, draining of the skin with a towel. Avoid damage, combing rashes.<br>
+						Rashes are treated topically with antiseptic agents. The appeared crusts are smeared with petroleum jelly or a fat cream.<br><br>
+						With the addition of complications or a severe course of the disease, treatment of chickenpox includes:<br>
+						1) antimicrobial therapy - with the addition of purulent processes;<br>
+						2) detoxification treatment - with severe intoxication;<br>
+						3) the introduction of immunoglobulin.<br>
+						
+					</p>
+					
+				</div>
+			</div>
+			<div class="side" id="side5"><div class="inside">
+					<p class="title">
+						Mononucleosis
+					</p>
+					<p class="text">
+						1) Maintenance therapy<br>
+						2) Corticosteroids may be helpful in severe illness. <br><br>
+
+						Supportive treatment of infectious mononucleosis. Patients need rest during the acute phase, but they can be active with a decrease in fever, pharyngitis and malaise.<br><br>
+						To prevent spleen rupture, patients should avoid lifting weights and contact sports for 1 month after the appearance of splenomegaly and throughout the period of enlargement of the spleen (which can be controlled by ultrasonography).
+					</p>
+					
+				</div></div>
+			<div class="side" id="side6">
+				<div class="inside">
+					<p class="title">
+						Rubella
+					</p>
+					<p class="text">
+						- Supportive care<br>
+						Rubella treatment is symptomatic. There is no specific therapy for encephalitis. <br><br>
+						
+
+						Prevention: <br>
+						The recommended schedule of vaccinations at the age of 0-6 years and the recommended schedule of immunization for children aged 7-18 years. It develops immunity for ≥15 years in> 95% of recipients and infections are not transmitted. <br><br>
+						For vaccination, children are prescribed a combination vaccine against measles, mumps and rubella in 2 doses:<br><br>
+
+						1) The first dose at the age of 12-15 months.
+						2) Second dose aged 4 to 6 years
+					</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script>
+		(function (){
+			var rotateX = 0;
+			var rotateY = 0;
+
+			document.onkeydown = function (e) {
+					if(e.keyCode === 37) rotateY += 10
+				else if(e.keyCode === 38) rotateX -= 10
+				else if(e.keyCode === 39) rotateY -= 10
+				else if(e.keyCode === 40) rotateX += 10
+
+				document.querySelector('.cube').style.transform = 
+				'rotateY('+rotateY+ 'deg)'+
+				'rotateX('+rotateX+ 'deg)';
+			}
+		})();
+	</script>
+</body>
+</html>
+
+

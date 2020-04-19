@@ -1,0 +1,281 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../images/bg.png) no-repeat;
+	font-family: 'Gotu', sans-serif;
+
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: transparent;
+}
+
+.center .sun {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%,-50%);
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: transparent;
+}
+
+.center .sun .earth {
+	position: absolute;
+	top: calc(50% - 1px);
+	left: 50%;
+	width: 200px;
+	height: 2px;
+	background: transparent;
+	transform-origin: left;
+	animation: rotate 10s linear infinite;
+}
+
+.center .sun .earth::before {
+	content: url(../images/virus.png);
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -125px;
+	margin-left: 50px;
+
+}
+
+.img1 {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+h2{
+	padding: 0;
+	margin: 5% 200px 0 0 ;
+}
+
+.frst_cont{
+	margin-top: 41vh;
+}
+
+
+.content {
+	padding-left: 10%;
+	padding-right: 10%;
+	background: #fff;
+	display: flex;
+	margin-top: 10%;
+}
+
+.ttext {
+	width: 60%;
+}
+
+.menu{
+	display: flex;
+
+}
+
+
+.menu_li {
+	display: flex;	
+	margin-right: 5px;
+}
+
+.menu_li a{
+	background: #fff;
+	display: inline-block;
+	font-weight: bold;
+	padding: 6px 30px;
+	border-radius: 5px;
+	transition: 0.5s;
+	transform: translateX(100px);
+	opacity: 0;
+}
+
+.menu_li a[data-scroll="in"] {
+	transform: translateX(0);.
+	transition-delay: 0.5s;
+	opacity: 1;
+}
+
+.main_text {
+	color: #fff;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.main_p {
+	width: 400px;
+	font-size: 16px;
+}
+
+.c_img {
+	width: 500px;
+	height: 500px;
+	margin-top: 5%;
+	border-radius: 10px;
+}
+
+img {
+	margin-left: 50px;
+
+}
+
+a {
+	color: #000;
+	list-style: none;
+	text-decoration: none;
+
+}
+
+section {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	color: #000;
+}
+
+section .content {
+	
+}	
+
+h2{
+	position: relative;
+	display: inline-block;
+	font-size: 3em;
+	transition: 0.25s;
+	transform-origin: left;
+	transform: scaleX(0);
+}
+
+h2[data-scroll="in"] {
+	transform: scaleX(1);
+}
+
+h2:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #f54242;
+	transform-origin: right;
+	transition: 0.25s;
+}
+
+h2[data-scroll="in"]:before {
+	transform: scaleX(0);
+	transition-delay: 0.25s;
+}
+
+
+.h2[data-scroll="in"] {
+	transform: scaleX(1);
+}
+
+.h2:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	transform-origin: right;
+	transition: 0.25s;
+}
+
+.h2[data-scroll="in"]:before {
+	transform: scaleX(0);
+	transition-delay: 0.25s;
+}
+
+
+section .content h3{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 1.5em;
+	transition: 0.25s;
+	transform-origin: right;
+	transform: scaleX(0);
+}
+
+section .content h3[data-scroll="in"] {
+	transform: scaleX(1);
+	transition-delay: 0.5s;
+}
+
+section .content h3:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #f54242;
+	transform-origin: left;
+	transition: 0.25s;
+}
+
+section .content h3[data-scroll="in"]:before {
+	transform: scaleX(0);
+	transition-delay: 0.75s;
+}
+
+section .content a {
+	position: relative;
+	background-color: #bf080b;
+	color: #fff;
+	padding: 8px 20px;
+	font-size: 16px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	transition: 1s;
+	transform: translateX(100px);
+	opacity: 0;
+	border-radius: 2px;
+}
+
+section .content a[data-scroll="in"] {
+	transform: translateX(0);.
+	transition-delay: 1s;
+	opacity: 1;
+}
+
+p {
+	font-size: 1.1em;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+p[data-scroll="in"] {
+	opacity: 1;
+	transition-delay: 0.5s;
+}
