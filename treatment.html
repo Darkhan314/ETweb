@@ -119,21 +119,21 @@
 	
 	
 	<script>
-		(function (){
-			var rotateX = 0;
-			var rotateY = 0;
 
-			document.onkeydown = function (e) {
-					if(e.keyCode === 37) rotateY += 10
-				else if(e.keyCode === 38) rotateX -= 10
-				else if(e.keyCode === 39) rotateY -= 10
-				else if(e.keyCode === 40) rotateX += 10
 
-				document.querySelector('.cube').style.transform = 
-				'rotateY('+rotateY+ 'deg)'+
-				'rotateX('+rotateX+ 'deg)';
-			}
-		})();
+	let rotateY = 0;
+	let rotateX = 0;
+	document.querySelector('.cube').onmousedown = (e) => {
+		document.querySelector('.cube').onmousemove = (e) => {
+			document.querySelector('.cube').style.transform = 
+			'rotateX('+e.pageY+'deg) rotateY('+e.pageX+'deg)'
+		}
+	}
+	document.querySelector('.cube').onmouseup = (e) => {
+		document.querySelector('.cube').onmousemove = (e) => {
+			return false;
+		}
+	}
 	</script>
 </body>
 </html>
